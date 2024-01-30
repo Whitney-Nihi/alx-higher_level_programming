@@ -3,7 +3,13 @@
 
 
 class Rectangle:
-    """Defines a rectangle."""
+    """Defines a rectangle.
+    
+    Attributes:
+        number_of_instances: Number of instances for Rectangle class.
+    """
+
+    number_of_instances = 0
 
     def __init__(self, width=0, height=0):
         """Initialize a new Rectangle.
@@ -53,7 +59,7 @@ class Rectangle:
             return (0)
         else:
             return (self.__height + self.__height) * 2
-
+    
     def __str__(self):
         """Return the printable representation of the Rectangle.
 
