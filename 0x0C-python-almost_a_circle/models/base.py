@@ -22,7 +22,7 @@ class Base:
         Args:
             id(int): The id of the new Base.
         """
-        if id != None:
+        if id is not None:
             self.id = id
         else:
             Base.__nb_objects += 1
