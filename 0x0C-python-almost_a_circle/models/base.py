@@ -17,7 +17,7 @@ class Base:
         """Initializes the base class
 
         Args:
-            id(int): The id of the new Base.
+            id (int): The id of the new Base.
         """
         if id is not None:
             self.id = id
