@@ -118,11 +118,11 @@ class Rectangle(Base):
 
         Args:
             *args(ints): Instance attributes.
-                args[0] = id
-                args[1] = width
-                args[2] = height
-                args[3] = x
-                args[4] = y
+                - 1st argument represents id attr
+                - 2nd argument represents width attr
+                - 3rd argument represents height attr
+                - 4th argument represents x attr
+                - 4th argument represents y attr
             **kwargs(dictionary): Instance attributes in key/value pairs.
         """
         if args and len(args) != 0:
