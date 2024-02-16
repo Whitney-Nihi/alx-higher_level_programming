@@ -4,7 +4,11 @@ This is the base class module
 """
 
 class Base:
-    """The base class"""
+    """The base class
+
+    Private Class Attributes:
+        __nb_object (int): Number of instantiated Bases.
+    """
     __nb_objects = 0
 
     def __init__(self, id=None):
