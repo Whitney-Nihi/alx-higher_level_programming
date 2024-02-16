@@ -29,16 +29,13 @@ class Rectangle(Base):
         self.x = x
         self.y = y
 
-    """define getters and setter for instance attributes."""
     @property
     def width(self):
-        """width getter."""
+        """width getter and setter for Rectangle."""
         return self.__width
 
     @width.setter
     def width(self, width):
-        """width setter."""
-
         if type(width) != int:
             raise TypeError("{} must be an integer".format(width))
         if width <= 0:
@@ -47,13 +44,11 @@ class Rectangle(Base):
 
     @property
     def height(self):
-        """height getter."""
+        """height getter and setter for Rectangle."""
         return self.__height
 
     @height.setter
     def height(self, height):
-        """height setter."""
-
         if type(height) != int:
             raise TypeError("{} must be an integer".format(height))
         if height <= 0:
@@ -62,13 +57,11 @@ class Rectangle(Base):
 
     @property
     def x(self):
-        """x getter."""
+        """x getter and setter for Rrectangle."""
         return self.__x
 
     @x.setter
     def x(self, x):
-        """x setter."""
-
         if type(x) != int:
             raise TypeError("{} must be an integer".format(x))
         if x < 0:
@@ -77,13 +70,11 @@ class Rectangle(Base):
 
     @property
     def y(self):
-        """y getter."""
+        """y getter and setter for Rectangle."""
         return self.__y
 
     @y.setter
     def y(self, y):
-        """y setter."""
-
         if type(y) != int:
             raise TypeError("{} must be an integer".format(y))
         if y < 0:
