@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 
-"""Defines a sub-class 'Rectangle'"""
+"""Defines a sub-class 'Rectangle'."""
 from models.base import Base
 
 
 class Rectangle(Base):
-    """Rectangle class inherits from Base Class"""
+    """Rectangle class inherits from Base Class."""
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """initializes the Rectangle class.
@@ -29,15 +29,15 @@ class Rectangle(Base):
         self.x = x
         self.y = y
 
-    """define getters and setter for instance attributes"""
+    """define getters and setter for instance attributes."""
     @property
     def width(self):
-        """width getter"""
+        """width getter."""
         return self.__width
 
     @width.setter
     def width(self, width):
-        """width setter"""
+        """width setter."""
 
         if type(width) != int:
             raise TypeError("{} must be an integer".format(width))
@@ -47,12 +47,12 @@ class Rectangle(Base):
 
     @property
     def height(self):
-        """height getter"""
+        """height getter."""
         return self.__height
 
     @height.setter
     def height(self, height):
-        """height setter"""
+        """height setter."""
 
         if type(height) != int:
             raise TypeError("{} must be an integer".format(height))
@@ -62,12 +62,12 @@ class Rectangle(Base):
 
     @property
     def x(self):
-        """x getter"""
+        """x getter."""
         return self.__x
 
     @x.setter
     def x(self, x):
-        """x setter"""
+        """x setter."""
 
         if type(x) != int:
             raise TypeError("{} must be an integer".format(x))
@@ -77,12 +77,12 @@ class Rectangle(Base):
 
     @property
     def y(self):
-        """y getter"""
+        """y getter."""
         return self.__y
 
     @y.setter
     def y(self, y):
-        """y setter"""
+        """y setter."""
 
         if type(y) != int:
             raise TypeError("{} must be an integer".format(y))
@@ -91,11 +91,11 @@ class Rectangle(Base):
         self.__y = y
 
     def area(self):
-        """Returns area value of Rectangle"""
+        """Returns area value of Rectangle."""
         return self.width * self.height
 
     def display(self):
-        """Function prints object with character #"""
+        """Function prints object with character #."""
         if self.width == 0 or self.height == 0:
             print("")
             return
@@ -108,22 +108,22 @@ class Rectangle(Base):
 
 
     def __str__(self):
-        """Return the string representation of the rectangle"""
+        """Return the string representation of the rectangle."""
 
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height)
 
 
     def update(self, *args, **kwargs):
-        """Method assigns an argument to each attribute
+        """Method assigns an argument to each attribute.
 
         Args:
-            *args(ints): Instance attributes
+            *args(ints): Instance attributes.
                 args[0] = id
                 args[1] = width
                 args[2] = height
                 args[3] = x
                 args[4] = y
-            **kwargs(dictionary): Instance attributes in key/value pairs
+            **kwargs(dictionary): Instance attributes in key/value pairs.
         """
         if args and len(args) != 0:
             a = 0
