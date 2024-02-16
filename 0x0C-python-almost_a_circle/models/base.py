@@ -1,12 +1,13 @@
 #!/usr/bin/python3
-"""This is the base class module"""
+
+"""Defines a base model class."""
 
 
 class Base:
-    """The base class
+    """Base model.
 
-    Represents the base for the other classes.
-    
+    This Represents the "base" for all other classes in project 0x0C*.
+
     Private Class Attributes:
         __nb_object (int): Number of instantiated Bases.
     """
@@ -14,13 +15,13 @@ class Base:
     __nb_objects = 0
 
     def __init__(self, id=None):
-        """Initializes the base class
+        """Initialize a new Base.
 
         Args:
-            id (int): The id of the new Base.
+            id (int): The identity of the new Base.
         """
         if id is not None:
             self.id = id
         else:
             Base.__nb_objects += 1
-            self.id = self.__nb_objects
+            self.id = Base.__nb_objects
