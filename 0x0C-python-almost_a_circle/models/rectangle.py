@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """Defines a sub-class 'Rectangle'"""
 from models.base import Base
 
