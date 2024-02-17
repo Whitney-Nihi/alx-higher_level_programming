@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """Defines a rectangle class."""
-import models.base
+from models.base import Base
 
 
 class Rectangle(Base):
@@ -157,3 +157,6 @@ class Rectangle(Base):
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id,
                 self.x, self.y,
                 self.width, self.height)
+
+if __name__ == "__main__":
+    pass
