@@ -30,4 +30,3 @@ def list_states (username, password, database):
 
     # Close the database connection
     db.close()
-
